@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://www.shutterstock.com/image-vector/percentage-signs-seamless-pattern-backgrounds-260nw-123960238.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+button{
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 16px;
+}
