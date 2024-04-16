@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+  <title>Magic Percentage Calculator</title>
+</head>
+<body>
+  <h1>Percentage Calculator</h1>
+  
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <input type="number" id="percentageInput" placeholder="Enter the percentage">
+  <button onclick="calculatePercentage()">Calculate</button>
+  
+  <p id="result"></p>
+  <script>
+    function calculatePercentage() {
+      var number = document.getElementById('numberInput').value;
+      var percentage = document.getElementById('percentageInput').value;
+      
+      if (number === '' || percentage === '' || isNaN(number) || isNaN(percentage)) {
+        document.getElementById('result').innerText = "Please enter valid numbers.";
+      } else {
+        number = Number(number);
+        percentage = Number(percentage);
+        
+        var result = (number * percentage) / 100;
+        document.getElementById('result').innerText = "The result is: " + result;
+      }
+    }
+  </script>
+  
+</body>
+</html>
